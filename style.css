@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("mountain.jpg");
+  background-size: contain;
+  height: 100%;
+  margin: 0px;
+}
+
+.box01 {
+  display: grid;
+  grid-template-rows: 150px 396px;
+  grid-row-gap: 110px;
+  position: absolute;
+  left: 300px;
+  width: 40px;
+}
+
+.box01>div {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.box23 {
+  display: grid;
+  grid-template-rows: 300px 246px;
+  grid-row-gap: 110px;
+  position: absolute;
+  left: 500px;
+  width: 40px;
+}
+
+.box23>div {
+
+  background-color: black;
+  border: 1px solid white;
+}
+
+
+.box45 {
+  display: grid;
+  grid-template-rows: 100px 446px;
+  grid-row-gap: 110px;
+  position: absolute;
+  left: 700px;
+  width: 40px;
+}
+
+.box45>div {
+  background-color: black;
+  border: 1px solid white;
+
+}
+
+.box67 {
+  display: grid;
+  grid-template-rows: 400px 146px;
+  grid-row-gap: 110px;
+  position: absolute;
+  left: 900px;
+  width: 40px;
+}
+
+.box67>div {
+  background-color: black;
+  border: 1px solid white;
+}
+
+#bird {
+  position: absolute;
+  bottom: 300px;
+  height: 100px;
+}
+
+#tree {
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  top: 180px;
+  left: 1000px;
+}
