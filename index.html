@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Bird Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before bird reaches its nest</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -27,6 +29,7 @@
   </div>
 
   <script>
+    // initially bird starts from the position 300(y-axis) i.e from the center
     var moveX = 0,
       moveY = 300;
     const speed = 10;
@@ -36,6 +39,8 @@
     var pageheight = h - 100;
     window.addEventListener("keydown", Control);
     var box1 = document.getElementById("box1");
+
+    // taking input from the keyboard for bird movement (w,a,s,d are the controls i have taken)
 
     function Control() {
       const key = event.key;
@@ -55,12 +60,18 @@
         moveX = moveX + speed;
         bird.style.left = moveX + "px";
       }
+
+      // comparing the position of the bird with tree , if bird reaches to the tree YOU WIN!!!!!
+
       if (bird.style.left == 1050 + "px" && bird.style.bottom < 400 + "px") {
         alert(
-          "Yayyy!!! You have won the game. Click OK if you want to play again"
+          "Yayyy!!! You won the game. Click OK if you want to play again"
         );
         window.location.reload();
-      } else if (
+      }
+
+      // comparing the position of the bird with obstacles , if bird collides with obstacles YOU LOSE and you can try again!!
+      else if (
         bird.style.left >= 230 + "px" &&
         bird.style.left <= 280 + "px" &&
         bird.style.bottom > 440 + "px"
@@ -71,7 +82,6 @@
         bird.style.left >= 230 + "px" &&
         bird.style.left <= 280 + "px" &&
         bird.style.bottom < 390 + "px"
-
       ) {
         alert("You lost the game . Try again!!!");
         window.location.reload();
@@ -118,8 +128,6 @@
         alert("You lost the game . Try again!!!");
         window.location.reload();
       }
-
-
     }
   </script>
 </body>
