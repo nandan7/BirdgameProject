@@ -9,6 +9,41 @@ body {
   margin: 0px;
 }
 
+.box11 {
+  display: grid;
+  grid-template-columns: 150px;
+  position: absolute;
+  top: 200px;
+  height: 30px;
+  background-color: black;
+  border: 1px solid white;
+
+}
+
+.box22 {
+  display: grid;
+  grid-template-columns: 150px;
+  position: absolute;
+  top: 400px;
+  height: 30px;
+  background-color: black;
+  border: 1px solid white;
+
+}
+
+.box33 {
+  display: grid;
+  grid-template-rows: 230px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  width: 30px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+
+
 .box01 {
   display: grid;
   grid-template-rows: 150px 396px;

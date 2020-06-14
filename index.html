@@ -11,6 +11,9 @@
 <body>
   <img id="bird" src="bird.png" alt="bird" height="80" width="80" />
   <img id="tree" src="tree.svg" alt="tree" />
+  <div class="box11"></div>
+  <div class="box22"></div>
+  <div class="box33"></div>
   <div class="box01">
     <div class="box0"></div>
     <div class="box1"></div>
@@ -37,15 +40,12 @@
     var h = document.body.clientHeight;
     var pagewidth = w - 110;
     var pageheight = h - 100;
-    window.addEventListener("keydown", Control);
-    var box1 = document.getElementById("box1");
 
     // taking input from the keyboard for bird movement (w,a,s,d are the controls i have taken)
 
     function Control() {
       const key = event.key;
       const bird = document.getElementById("bird");
-      var box0 = document.getElementById("box0");
 
       if (key == "w" && moveY < pageheight) {
         moveY = moveY + speed;
@@ -124,6 +124,22 @@
         bird.style.left >= 830 + "px" &&
         bird.style.left <= 850 + "px" &&
         bird.style.bottom < 140 + "px"
+      ) {
+        alert("You lost the game . Try again!!!");
+        window.location.reload();
+      } else if (
+        bird.style.left >= 800 + "px"
+      ) {
+        alert("You lost the game . Try again!!!");
+        window.location.reload();
+      } else if (
+
+        bird.style.bottom < 250 + "px"
+      ) {
+        alert("You lost the game . Try again!!!");
+        window.location.reload();
+      } else if (
+        bird.style.bottom > 340 + "px"
       ) {
         alert("You lost the game . Try again!!!");
         window.location.reload();
