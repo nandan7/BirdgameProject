@@ -11,9 +11,6 @@
 <body>
   <img id="bird" src="bird.png" alt="bird" height="80" width="80" />
   <img id="tree" src="tree.svg" alt="tree" />
-  <div class="box11"></div>
-  <div class="box22"></div>
-  <div class="box33"></div>
   <div class="box01">
     <div class="box0"></div>
     <div class="box1"></div>
@@ -124,22 +121,6 @@
         bird.style.left >= 830 + "px" &&
         bird.style.left <= 850 + "px" &&
         bird.style.bottom < 140 + "px"
-      ) {
-        alert("You lost the game . Try again!!!");
-        window.location.reload();
-      } else if (
-        bird.style.left >= 800 + "px"
-      ) {
-        alert("You lost the game . Try again!!!");
-        window.location.reload();
-      } else if (
-
-        bird.style.bottom < 250 + "px"
-      ) {
-        alert("You lost the game . Try again!!!");
-        window.location.reload();
-      } else if (
-        bird.style.bottom > 340 + "px"
       ) {
         alert("You lost the game . Try again!!!");
         window.location.reload();
